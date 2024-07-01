@@ -41,7 +41,7 @@
     </label>
     <nav>
         <div class="sidebar" style="justify-content: space-between;">
-            <img src="shahan1.jpg" alt=""
+            <img src="shahan.jpg" alt=""
                 style="background-position: center; background-size: cover; align-items: center;">
             <h1
                 style="color: white; font-size: 22px; background-color:  #3a3737; text-align: center;font-weight: bold;margin-bottom: 10px;">
@@ -805,7 +805,7 @@
                                                 <label for="">Message</label>
                                                 <span>Message</span>
                                             </div>
-                                            <input type="submit" value="Send" class="btn2" name="btninsert">
+                                            <input type="submit" value="Send" class="btn2" id="contactButton" name="btninsert">
                                         </form>
                                     </div>
                                 </div>
@@ -851,6 +851,11 @@
 
         });
     </script>
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            alert('Please contact us via email at Shahanjamilqureshi@gmail.com or call us at +923322073671 Thank You ');
+        });
+        </script>
     <script>
         $(".bar").each(function () {
             $(this).find(".bar-inner").animate({
